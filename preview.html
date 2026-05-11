@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live試食会 無料デリバリー</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Yu Gothic",sans-serif;
+}
+
+body{
+  background:#f7f3ec;
+  color:#222;
+}
+
+.hero{
+  background:
+  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+  url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  padding:40px 20px;
+  color:white;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.hero-flex{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:30px;
+}
+
+.staff{
+  width:300px;
+}
+
+.staff img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.staff-comment{
+  background:white;
+  color:black;
+  padding:18px;
+  border-radius:20px;
+  margin-top:15px;
+  font-size:22px;
+  font-weight:bold;
+  line-height:1.6;
+}
+
+.main-copy{
+  flex:1;
+}
+
+.live{
+  font-size:90px;
+  font-weight:900;
+  line-height:1;
+}
+
+.live span{
+  color:#ffd000;
+}
+
+.catch{
+  font-size:36px;
+  font-weight:bold;
+  margin-top:20px;
+}
+
+.desc{
+  margin-top:15px;
+  font-size:22px;
+  line-height:1.8;
+}
+
+.free-box{
+  background:#d90000;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  min-width:250px;
+}
+
+.free-box h2{
+  color:#ffe600;
+  font-size:70px;
+  line-height:1;
+}
+
+.free-box p{
+  font-size:34px;
+  font-weight:bold;
+}
+
+.section{
+  padding:60px 20px;
+}
+
+.title{
+  text-align:center;
+  font-size:50px;
+  color:#c40000;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.sub{
+  text-align:center;
+  font-size:22px;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.card h3{
+  color:#c40000;
+  margin-top:10px;
+  font-size:28px;
+}
+
+.card p{
+  margin-top:8px;
+  font-size:18px;
+}
+
+.form-wrap{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+form{
+  display:grid;
+  gap:20px;
+}
+
+label{
+  font-size:20px;
+  font-weight:bold;
+  margin-bottom:8px;
+  display:block;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:16px;
+  border:1px solid #ccc;
+  border-radius:12px;
+  font-size:18px;
+}
+
+button{
+  background:#1c9b00;
+  color:white;
+  border:none;
+  padding:22px;
+  border-radius:16px;
+  font-size:30px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.9;
+}
+
+.note{
+  text-align:center;
+  margin-top:20px;
+  color:#666;
+}
+
+footer{
+  background:#c40000;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.live{
+  font-size:56px;
+}
+
+.catch{
+  font-size:26px;
+}
+
+.desc{
+  font-size:18px;
+}
+
+.staff{
+  width:100%;
+}
+
+.hero-flex{
+  flex-direction:column;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-flex">
+
+<div class="staff">
+
+<img src="tanaka.jpg" alt="日本食研田中">
+
+<div class="staff-comment">
+当日、私が配達いたします！<br>
+どうぞお気軽にご利用ください！<br><br>
+
+日本食研 田中
+</div>
+
+</div>
+
+<div class="main-copy">
+
+<div class="live">
+Live<span>試食会</span>
+</div>
+
+<div class="catch">
+厨房の熱気をそのままに。<br>
+お店の「次の一皿」をその場で試作・試食。
+</div>
+
+<div class="desc">
+ご来場が難しいお客様へ、<br>
+試食会メニューを無料でデリバリーいたします！
+</div>
+
+</div>
+
+<div class="free-box">
+<h2>無料</h2>
+<p>デリバリー！</p>
+
+<div style="margin-top:15px;font-size:20px;">
+各開催日20社限定
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="title">
+ご自宅・お店で試食いただけます
+</h2>
+
+<p class="sub">
+人気の宴会メニューを無料でお届け！
+</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop">
+<h3>きんぴらごぼう</h3>
+<p>1kgチルド</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800&auto=format&fit=crop">
+<h3>ひじき煮</h3>
+<p>1kgチルド</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617196038435-b1784cf3d363?q=80&w=800&auto=format&fit=crop">
+<h3>筑前煮</h3>
+<p>1kgチルド</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908176997-4319b2d70d2d?q=80&w=800&auto=format&fit=crop">
+<h3>きゅうり浅漬け</h3>
+<p>500g</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?q=80&w=800&auto=format&fit=crop">
+<h3>海鮮サラダ</h3>
+<p>和風ドレッシング付き</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=800&auto=format&fit=crop">
+<h3>カツオのたたき</h3>
+<p>宴会人気メニュー</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="form-wrap">
+
+<h2 class="title">
+無料デリバリー申込フォーム
+</h2>
+
+<form action="https://formsubmit.co/kataoka231738@nihonshokken.co.jp" method="POST">
+
+<input type="hidden" name="_cc" value="tanaka201006@nihonshokken.co.jp">
+
+<input type="hidden" name="_subject" value="【Live試食会】無料デリバリー申込">
+
+<input type="hidden" name="_captcha" value="false">
+
+<div>
+<label>お店の名前</label>
+<input type="text" name="shop" required>
+</div>
+
+<div>
+<label>ご担当者名</label>
+<input type="text" name="name" required>
+</div>
+
+<div>
+<label>電話番号</label>
+<input type="tel" name="tel" required>
+</div>
+
+<div>
+<label>希望のデリバリー日時</label>
+
+<select name="delivery_time" required>
+
+<option value="">
+選択してください
+</option>
+
+<option>
+5/21 11:00～12:00
+</option>
+
+<option>
+5/21 12:00～13:00
+</option>
+
+<option>
+5/21 13:00～14:00
+</option>
+
+<option>
+5/21 14:00～15:00
+</option>
+
+<option>
+5/25 11:00～12:00
+</option>
+
+<option>
+5/25 12:00～13:00
+</option>
+
+<option>
+5/25 13:00～14:00
+</option>
+
+<option>
+5/25 14:00～15:00
+</option>
+
+<option>
+6/5 11:00～12:00
+</option>
+
+<option>
+6/5 12:00～13:00
+</option>
+
+<option>
+6/5 13:00～14:00
+</option>
+
+<option>
+6/5 14:00～15:00
+</option>
+
+</select>
+
+</div>
+
+<div>
+<label>試食される人数</label>
+<input type="number" name="people" required>
+</div>
+
+<div>
+<label>その他・ご要望</label>
+<textarea name="memo" rows="4"></textarea>
+</div>
+
+<button type="submit">
+無料デリバリーを申し込む
+</button>
+
+</form>
+
+<div class="note">
+送信後、担当者よりご連絡いたします。
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+日本食研 Live試食会
+</footer>
+
+</body>
+</html>
